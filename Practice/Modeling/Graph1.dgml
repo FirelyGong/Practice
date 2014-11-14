@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="47596050-1d15-4373-ac92-006a38df52ae1" Bounds="8.99999913533529,-238.98005213623,76.5633333333333,25.96" Label="New Node" UseManualLocation="True" />
+    <Node Id="b1f45c9a-890b-4848-acea-6ab4290fb5e51" Bounds="4.99999532063802,-124.000000457764,76.5633333333333,25.96" Label="New Node" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="47596050-1d15-4373-ac92-006a38df52ae1" Target="b1f45c9a-890b-4848-acea-6ab4290fb5e51" Bounds="44.0461278034238,-213.02005213623,2.78398097840942,80.0254928740886" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

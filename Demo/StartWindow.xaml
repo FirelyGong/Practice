@@ -1,0 +1,24 @@
+﻿<Window x:Class="Demo.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:demo="clr-namespace:Demo"
+        Title="StartWindow" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Content="Asynchronization" Margin="5" Click="Async_Click"/>
+        <Button Grid.Column="1" Content="Algorithm" Margin="5" Click="Alg_Click"></Button>
+        <Button Grid.Column="2" Margin="5" Content="UI Thread" Click="Ui_Click"></Button>
+        <TextBlock Name="textBlockThread" TextWrapping="Wrap" Grid.Row="1"></TextBlock>
+        <demo:MyTextBox Grid.Column="1" Grid.Row="2"></demo:MyTextBox>
+        <TextBlock Grid.Column="2" Grid.Row="2" Text="{demo:StringTranslator test}"></TextBlock>
+    </Grid>
+</Window>

@@ -1,0 +1,72 @@
+﻿<Window x:Class="Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="textBoxSort"></TextBox>
+            <Button Content="Bubble" Grid.Column="1" Click="Button_Click"></Button>
+            <Button Content="Quick" Grid.Column="2" Click="Button_Click"></Button>
+            <TextBlock Grid.Row="1" Name="textBlockSort"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Name="textBlockSortDesc"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox Name="textBoxSearch"></TextBox>
+            <Button Content="Simple" Grid.Column="1" Click="Button_Click"></Button>
+            <Button Content="Binary" Grid.Column="2" Click="Button_Click"></Button>
+            <TextBlock Grid.Row="1" Name="textBlockSearch"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Name="textBlockSearchDesc"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox Name="textBoxBinaryTree"></TextBox>
+            <Button Content="Init" Grid.Column="1" Click="Button_Click"></Button>
+            <Button Content="Delete" Grid.Column="2" Click="Button_Click"></Button>
+            <Button Content="All" Grid.Column="3" Click="Button_Click"></Button>
+            <Button Content="Add" Grid.Column="4" Click="Button_Click"></Button>
+            <TextBlock Grid.Row="1" Name="textBlockBinaryTree"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Name="textBlockBinaryTreeDesc"></TextBlock>
+        </Grid>
+        <Button Grid.Column="0" Grid.Row="3" Height="50" Content="Tree" Click="Button_Click_1"></Button>
+        <Button Grid.Column="0" Grid.Row="4" Height="50" Content="BTree" Click="Button_Click_2"></Button>
+        <Button Grid.Column="0" Grid.Row="5" Height="50" Content="BPlusTree" Click="Button_Click_3"></Button>
+        <Button Grid.Column="0" Grid.Row="6" Height="50" Content="FileSystem" Click="Button_Click_4"></Button>
+    </Grid>
+</Window>

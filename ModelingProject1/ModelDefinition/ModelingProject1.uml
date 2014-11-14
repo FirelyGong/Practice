@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="0a34b39a-978c-491c-8ea9-1a82c350416a"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="834a19bc-9b5f-4ff3-a60e-f09e542ac83f"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="55666b8b-afb2-4d26-911b-57e199957373"
+            name="Node"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="0692fdaf-49fb-478d-9017-c2db97227c97"
+                guard="Check status"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <decisionNodeMoniker
+                  Id="df481acf-39c7-4b74-ab35-6f41da40712c"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="b0f3177e-fc43-44a9-9f1a-a1a209f421eb"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <decisionNode
+            Id="df481acf-39c7-4b74-ab35-6f41da40712c"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b563b01e-63f8-4559-91a9-ff4ed8c2ddb1"
+                guard="Is UnderFlow"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="666a423f-9cf6-4329-bb6a-c8c1553d9a31"
+                  LastKnownName="Action1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b0c3d2d7-55e6-435f-9e46-dec23ce5f847"
+                guard="Is OverFlow"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2ed53494-8828-4539-a655-28a66f6b03ad"
+                  LastKnownName="Split"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <initialNode
+            Id="1857f1b2-eab3-4ac9-9c08-c397b670dd54"
+            name="Initial1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="c1bd3c55-3dfb-492f-95ec-bafec29bd339"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="55666b8b-afb2-4d26-911b-57e199957373"
+                  LastKnownName="Node"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <opaqueAction
+            Id="666a423f-9cf6-4329-bb6a-c8c1553d9a31"
+            name="Action1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="09373fce-b4dd-4721-aa7b-7337927c4f5f"
+                guard="Check neighbour nodes"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="fda0244e-5984-4ce3-b317-c43707ec07af"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2ed53494-8828-4539-a655-28a66f6b03ad"
+            name="Split"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="74ed3b43-0586-413b-89b9-24a58071e1f0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c9deffd-2b3c-41da-87b3-b127f6390d32"
+                  LastKnownName="Check parent"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="ecf55bed-a10d-44d4-b251-1e7b2a482400"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="edf6f39c-6ee9-40f6-9da9-01069b541edd"
+                guard="Has no parent"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="8d68b96c-2c1a-45f2-a2bc-70719819f125"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="03f7f425-41eb-4ca4-a696-086fcb72f82c"
+                guard="Has parent"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="55666b8b-afb2-4d26-911b-57e199957373"
+                  LastKnownName="Node"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="8d68b96c-2c1a-45f2-a2bc-70719819f125"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="fda0244e-5984-4ce3-b317-c43707ec07af"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4a1f4b5d-3839-4e31-a23a-a22b22026582"
+                guard="Can move item from neighbour node"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="63a07203-e494-465c-9e3e-1ebf2fc9309f"
+                  LastKnownName="Move a item from neighbour node"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="09765869-5c16-4f55-8f76-a1576605ed6e"
+                guard="Can not move item from neighbour node"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d132c75d-01f6-48f4-89bd-771def14b0df"
+                  LastKnownName="Merge with right neighbour node"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="63a07203-e494-465c-9e3e-1ebf2fc9309f"
+            name="Move a item from neighbour node"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="daa36e0a-99f6-49b0-91c2-550f54dd9e93"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c9deffd-2b3c-41da-87b3-b127f6390d32"
+                  LastKnownName="Check parent"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d132c75d-01f6-48f4-89bd-771def14b0df"
+            name="Merge with right neighbour node"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5f47302a-4faa-4941-9e4a-5a0aefd5039b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c9deffd-2b3c-41da-87b3-b127f6390d32"
+                  LastKnownName="Check parent"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7c9deffd-2b3c-41da-87b3-b127f6390d32"
+            name="Check parent"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="afc4e4c4-8309-48f3-93d7-5e5779962216"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ecf55bed-a10d-44d4-b251-1e7b2a482400"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e358b879-a0e0-4b66-b74d-2f716356597d"
+        name="Data storage system"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ca51e8fc-3a41-4dee-bd77-157125b8b54e"
+            isDerived="false"
+            sourceEndRoleName="Data storage system"
+            targetEndRoleName="Persistence B+Tree"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="358ed4cb-942d-4d61-bd66-43aa00f97df5"
+              LastKnownName="Persistence B+Tree"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f18926a7-3391-468e-84d2-4c4bbc0c0b37"
+                  name="Data storage system"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d8c07319-6033-4ad1-b651-88a8ab3bcbcb"
+                  name="Persistence B+Tree"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4b6f02ed-f9fd-440c-917f-6edb3d79a5be"
+            isDerived="false"
+            sourceEndRoleName="Data storage system"
+            targetEndRoleName="Load B+ tree node"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="013bb9d7-33d4-4b05-a096-3562ade0c87b"
+              LastKnownName="Load B+ tree node"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9bc25bfd-a3ad-4030-841b-ee475a27af25"
+                  name="Data storage system"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d03c100d-a695-47f7-9988-ea2ae6700add"
+                  name="Load B+ tree node"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b9f42a1a-f8a7-4595-848a-be7c903f6613"
+            isDerived="false"
+            sourceEndRoleName="Data storage system"
+            targetEndRoleName="Save object"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f35e7c74-f5f1-4217-8d85-103fc1eb71e0"
+              LastKnownName="Save object"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f38999b-60d1-4e39-8104-9c7406ef6547"
+                  name="Data storage system"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03de0f5f-26e7-4dbb-85eb-8a1ed0a2a5cc"
+                  name="Save object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c17f2e3d-5e47-436c-bc53-817c2b227676"
+            isDerived="false"
+            sourceEndRoleName="Data storage system"
+            targetEndRoleName="Query object"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="75a1060d-9dcc-4e24-857f-7d91af001472"
+              LastKnownName="Query object"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b7d2cf1d-9115-457a-8d2c-a27fc6fb8b80"
+                  name="Data storage system"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4256c018-a741-4da2-a233-b9a5bd570472"
+                  name="Query object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="358ed4cb-942d-4d61-bd66-43aa00f97df5"
+        name="Persistence B+Tree"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c8b0e18f-a003-4e22-8455-6ed2f2a51d79"
+            isDerived="false"
+            sourceEndRoleName="Persistence B+Tree"
+            targetEndRoleName="Serialize Object"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="17543e12-8ba2-4be4-85c4-f71afb4e0524"
+              LastKnownName="Serialize Object"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d8f65db-dd95-4c72-8d27-27e3b4b92d72"
+                  name="Persistence B+Tree"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1aadd4a7-3cdb-4806-bfa5-49a026cea8bc"
+                  name="Serialize Object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="89140c94-af05-405e-8747-e7a13f0d383b"
+        name="Data Analysis Module"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3191455d-1b2a-4ef5-bbd7-18756f47e7c7"
+        name="Object Relationship Collecting"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="89140c94-af05-405e-8747-e7a13f0d383b"
+            LastKnownName="Data Analysis Module"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="17543e12-8ba2-4be4-85c4-f71afb4e0524"
+        name="Serialize Object"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="89140c94-af05-405e-8747-e7a13f0d383b"
+            LastKnownName="Data Analysis Module"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8ddabcc0-8c73-42fa-99e4-a0e86c04cd72"
+        name="Deserialize Object"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="89140c94-af05-405e-8747-e7a13f0d383b"
+            LastKnownName="Data Analysis Module"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="27ec9d21-d054-41fb-b8fe-8a4e25ae662a"
+        name="Actor2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f35e7c74-f5f1-4217-8d85-103fc1eb71e0"
+        name="Save object"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="394c5a61-89cc-43c0-8df2-e86f1a73e501"
+            isDerived="false"
+            sourceEndRoleName="Save object"
+            targetEndRoleName="Object Relationship Collecting"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3191455d-1b2a-4ef5-bbd7-18756f47e7c7"
+              LastKnownName="Object Relationship Collecting"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="897000b4-cf90-41af-90f7-144fc339bfaa"
+                  name="Save object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d1cecfb3-53cf-497f-9100-5851d3991077"
+                  name="Object Relationship Collecting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="40e9da5f-4de2-4651-8cb0-143d5dca2095"
+            isDerived="false"
+            sourceEndRoleName="Save object"
+            targetEndRoleName="Serialize Object"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="17543e12-8ba2-4be4-85c4-f71afb4e0524"
+              LastKnownName="Serialize Object"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b352ae00-f148-4d64-b522-e22e1f431138"
+                  name="Save object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ddfb5eba-9f00-4ae5-88a8-09db4a9cb4de"
+                  name="Serialize Object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="75a1060d-9dcc-4e24-857f-7d91af001472"
+        name="Query object"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3565e01c-e2fe-485d-a992-4cbb23344e8c"
+            isDerived="false"
+            sourceEndRoleName="Query object"
+            targetEndRoleName="Query object"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="75a1060d-9dcc-4e24-857f-7d91af001472"
+              LastKnownName="Query object"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28f5e389-9c73-44f7-940e-8d6a2bdbdd12"
+                  name="Query object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bf3c8f8e-6f40-4675-a29e-9a16851f9f44"
+                  name="Query object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2a8e1663-4098-477e-b309-3a1ff3ce03c6"
+            isDerived="false"
+            sourceEndRoleName="Query object"
+            targetEndRoleName="Deserialize Object"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8ddabcc0-8c73-42fa-99e4-a0e86c04cd72"
+              LastKnownName="Deserialize Object"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8795ff1-a0c1-4459-a184-6234b91711c6"
+                  name="Query object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="34e86715-5e1b-4823-8231-50d593d03e10"
+                  name="Deserialize Object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="013bb9d7-33d4-4b05-a096-3562ade0c87b"
+        name="Load B+ tree node"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a516e4c1-4c3c-464f-beaa-0b71be3be4aa"
+            isDerived="false"
+            sourceEndRoleName="Load B+ tree node"
+            targetEndRoleName="Deserialize Object"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8ddabcc0-8c73-42fa-99e4-a0e86c04cd72"
+              LastKnownName="Deserialize Object"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d130c2d-d88e-467a-8eaf-753cd5e13389"
+                  name="Load B+ tree node"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dcfbe089-3e47-4dba-9fac-778a1ff41994"
+                  name="Deserialize Object"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

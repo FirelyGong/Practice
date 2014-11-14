@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Practice.Algorithm.Tree.BPlusTree.BPTree">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIEAFAAAAEAAAAAAAAAAAAAAAEIAAAAAAAQAQBAAAA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practice.Algorithm.Tree.BPlusTree.BPTreeBranch">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAALAAAACAgAAAAAAAAAACACAAAAAAAAAAAAEAAAQ=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeBranch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practice.Algorithm.Tree.BPlusTree.BPTreeBranchCollection">
+    <Position X="3" Y="5.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>KIIIAEAAAAAAAQAACEAAAAQQAAEAAAAAAAACIAJEAAA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeBranchCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practice.Algorithm.Tree.BPlusTree.BPTreeDataCollection">
+    <Position X="9.25" Y="3.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAIIAEgAAAAAAQAACAAIIAQAAAEAAAAAAAACAAJEBAA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeDataCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practice.Algorithm.Tree.BPlusTree.BPTreeInternalNode" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAABAACAAAIAAACAACBAAQAQEAAAAAAQAAA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeInternalNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practice.Algorithm.Tree.BPlusTree.BPTreeLeafNode" Collapsed="true">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAABAACAAAIUAACAACBAAQAQEAAAEAAQAAA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeLeafNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practice.Algorithm.Tree.BPlusTree.BPTreeNode" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgCAEAAABgACAAAIAAAAAACBAAQgQEAAAAQAAABA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practice.Algorithm.Tree.BPlusTree.BPTreeNodeData">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeNodeData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Practice.Algorithm.Tree.BPlusTree.BPTreeNodeStatus">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAIAAAAIAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeNodeStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Practice.Algorithm.Tree.BPlusTree.BPTreeNodeType">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Algorithm\Tree\BPlusTree\BPTreeNodeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

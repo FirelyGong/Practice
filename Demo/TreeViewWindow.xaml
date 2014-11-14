@@ -1,0 +1,45 @@
+﻿<Window x:Class="Demo.TreeViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TreeView" Height="500" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox Name="textBoxBinaryTree"></TextBox>
+            <Button Content="Init" Grid.Column="1" Click="Button_Click"></Button>
+            <Button Content="Delete" Grid.Column="2" Click="Button_Click"></Button>
+            <Button Content="All" Grid.Column="3" Click="Button_Click"></Button>
+            <Button Content="Add" Grid.Column="4" Click="Button_Click"></Button>
+            <Button Content="Step" Grid.Column="5" Click="Button_Click"></Button>
+            <TextBlock Grid.Row="1" Name="textBlockBinaryTree"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Name="textBlockBinaryTreeDesc"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="addTextBox" Width="160"></TextBox>
+            <Button Content="Element" Grid.Column="1" Click="Button_Click"></Button>
+        </Grid>
+        <Canvas Name="canvas" Grid.Row="2">
+
+        </Canvas>
+    </Grid>
+</Window>

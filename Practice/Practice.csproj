@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B162EDB7-01F8-4EEF-AC6D-B6A7B041E41C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Practice</RootNamespace>
+    <AssemblyName>Practice</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithm\Finding\BinarySearch.cs" />
+    <Compile Include="Algorithm\Finding\IntBinarySearch.cs" />
+    <Compile Include="Algorithm\Finding\SimpleSearch.cs" />
+    <Compile Include="Algorithm\Sorting\BubbleSort.cs" />
+    <Compile Include="Algorithm\Sorting\QuickSort.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeDataCollection.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeDataEnumerator.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeDataSet.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeExtensionMethods.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\Exceptions\BPTreeInvalidNodeException.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeNodeCollection.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeNodeType.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeLeafNode.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeInternalNode.cs" />
+    <Compile Include="Algorithm\Tree\BinaryTree\BalancedBinaryTree.cs" />
+    <Compile Include="Algorithm\Tree\BinaryTree\SimpleBinaryTree.cs" />
+    <Compile Include="Algorithm\Tree\BinaryTree\BinaryTreeNode.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeNode.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeNodeData.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTreeNodeState.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\INodePersistence.cs" />
+    <Compile Include="Algorithm\Tree\BPlusTree\BPTree.cs" />
+    <Compile Include="Algorithm\Tree\BTree\BTreeNode.cs" />
+    <Compile Include="Algorithm\Tree\BTree\BTreeNodeElement.cs" />
+    <Compile Include="Algorithm\Tree\BTree\BTreeNodeStatus.cs" />
+    <Compile Include="Algorithm\Tree\BTree\SimpleBTree.cs" />
+    <Compile Include="ByteArraySerializer.cs" />
+    <Compile Include="DataBase\DBEngine.cs" />
+    <Compile Include="DataBase\Exceptions\ExceptionHandler.cs" />
+    <Compile Include="DataBase\Exceptions\ExceptionPolicy.cs" />
+    <Compile Include="DataBase\Model\IObjectOperation.cs" />
+    <Compile Include="DataBase\Model\IObjectQuery.cs" />
+    <Compile Include="DataBase\Model\ObjectAnalyser.cs" />
+    <Compile Include="DataBase\Model\ObjectSerializer.cs" />
+    <Compile Include="DataBase\Model\RelationshipModel.cs" />
+    <Compile Include="DataBase\Objects\IRelatedObject.cs" />
+    <Compile Include="DataBase\Objects\RelatedObjectAttribute.cs" />
+    <Compile Include="DataBase\Model\ObjectOperation.cs" />
+    <Compile Include="DataBase\UserInterface\RecordSetPathChecker.cs" />
+    <Compile Include="DataBase\Storage\StorageProvider.cs" />
+    <Compile Include="DataBase\Storage\FileHeader.cs" />
+    <Compile Include="DataBase\Storage\Node.cs" />
+    <Compile Include="DataBase\Storage\NodeStore.cs" />
+    <Compile Include="DataBase\Storage\Pointer.cs" />
+    <Compile Include="DataBase\Storage\Space.cs" />
+    <Compile Include="DataBase\Storage\StreamHelper.cs" />
+    <Compile Include="DataBase\UserInterface\RecordSet.cs" />
+    <Compile Include="ThingsBase\DataPool\DataContainer.cs" />
+    <Compile Include="ThingsBase\DataPool\NodePersistence.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThingsBase\ThingsData.cs" />
+    <Compile Include="ThingsBase\ThingsBaseEngine.cs" />
+    <Compile Include="ThingsBase\ThingsDataConvertor.cs" />
+    <Compile Include="ThingsBase\ThingsInstructor.cs" />
+    <Compile Include="ThingsBase\VTable\ThingsClass.cs" />
+    <Compile Include="Vfs\BlockState.cs" />
+    <Compile Include="Vfs\BlockType.cs" />
+    <Compile Include="Vfs\BootInfo.cs" />
+    <Compile Include="Vfs\BytesSeriesReader.cs" />
+    <Compile Include="Vfs\BytesSeriesWriter.cs" />
+    <Compile Include="Vfs\DataBlock.cs" />
+    <Compile Include="Vfs\DataPoint.cs" />
+    <Compile Include="DisposableObject.cs" />
+    <Compile Include="Vfs\BlockManager.cs" />
+    <Compile Include="Vfs\Exceptions\DataBlockParseException.cs" />
+    <Compile Include="Vfs\Exceptions\InvalidBootInfoException.cs" />
+    <Compile Include="Vfs\Exceptions\VfsException.cs" />
+    <Compile Include="Vfs\StreamStorage.cs" />
+    <Compile Include="Vfs\IStorage.cs" />
+    <Compile Include="Vfs\FileStorage.cs" />
+    <Compile Include="Vfs\StreamHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algorithm\Tree\RTree\" />
+    <Folder Include="Expression\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Modeling\ClassDiagram1.cd" />
+    <None Include="Modeling\Graph1.dgml" />
+    <None Include="Modeling\SequenceDiagram1.sequencediagram" />
+    <None Include="Modeling\SequenceDiagram2.sequencediagram" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modeling\SequenceDiagram1.sequencediagram.layout">
+      <DependentUpon>SequenceDiagram1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeling\SequenceDiagram2.sequencediagram.layout">
+      <DependentUpon>SequenceDiagram2.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
